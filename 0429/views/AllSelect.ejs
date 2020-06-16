@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  ejs는 단독으로 실행이 절대 불가능 -->
+    로그인 한 사람의 NAME : <%=user.name%>
+    <h1>전체회원 검색 페이지</h1>
+    
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>PW</th>
+            <th>NICK</th>
+        </tr>
+        <%for(var i = 0; i<rows.length;i++){ %>
+            <tr>
+                <td><%=rows[i].id%></td>
+                <td><%=rows[i].pw%></td>
+                <td><%=rows[i].nickname%></td>
+                <td><a href="http://localhost:3000/Delete?id=<%=rows[i].id%>">삭제</a></td>
+            </tr>
+            
+        <%}%>
+    </table>
+    
+    
+
+</body>
+</html>

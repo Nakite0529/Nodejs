@@ -1,0 +1,11 @@
+{
+  "name": "0429",
+  "version": "1.0.0",
+  "description": "npm init",
+  "main": "0300_express.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}

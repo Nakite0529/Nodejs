@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ejs Index페이지</h1>
+    서버에서 넘어돈 num값: <%= num %>
+
+    <% if (num%2 == 0){ %>
+        <h3>It's even</h3>
+    <% }else{ %>
+        <h3>It's odd</h3>
+    <% } %>
+    
+    <table border='1' >
+        <tr>
+        <% for( var i=1; i<=num; i++){ %>
+            <td><%= i %></td>
+        <% } %>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Index 접 성 ~!</h1>
+    서버에서 보내준 값: <%=num%>
+
+    <%if(num%2==0){%>
+    <h1>짝수입니다.</h1>
+    <%}else{%>
+    <h1>홀수입니다.</h1>
+    <%}%>
+    <table border="1">
+        
+        <%for(var i = 0; i < num1; i++){%>
+            <td><%=i+1%></td>
+        <%}%>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 서버에 값을 보내기 위한 3가지 조건 -->
+    <form action="http://127.0.0.1:3001/plus"> 
+        <!-- 1. action : 서버의 주소설정 -->
+        <input type="text" name="num1"> 
+        <select name="cal">
+             <option>+</option> 
+             <option>-</option> 
+             <option>*</option> 
+             <option>/</option> 
+        </select>
+        <input type="text" name="num2">
+        <!-- input태그 : 사용자가 값을 입력할 수 있는 태그 -->
+        <!-- 2. name : 각 input태그들을 서버에서 구별해주는 역할 -->
+        
+        <input type="submit" value="서버값 전송">
+        <!-- 3. submit : 서버에 값을 요청할 수 있는 버튼 -->
+    </form>
+</body>
+</html>
